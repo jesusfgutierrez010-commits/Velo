@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios | VELOZ Sport</title>
+<meta name="description" content="Uniformes de equipo, personalización y cotizador en línea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="VELOZ Sport, inicio"><i></i>VELOZ</a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul><li><a class="link" href="index.html">Inicio</a></li><li><a class="link" href="quienes-somos.html">Quiénes somos</a></li><li><a class="link" href="portafolio.html">Portafolio</a></li><li><a class="link" href="servicios.html" aria-current="page">Servicios</a></li><li><a class="link" href="contacto.html">Contacto</a></li></ul>
+      <button class="theme-btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+  </div>
+</header>
+<main id="main">
+
+<div class="wrap page-title">
+  <h1>Servicios</h1>
+  <p class="lead">Desde una camiseta hasta el uniforme completo de tu club.</p>
+</div>
+<section>
+  <div class="wrap">
+    <div class="services">
+      <div class="service"><h3>Uniformes de equipo</h3><p>Camiseta, short y medias con tus colores. Pedidos desde 10 unidades.</p></div>
+      <div class="service"><h3>Personalización</h3><p>Nombre, número y escudo con sublimación que no se desgasta.</p></div>
+      <div class="service"><h3>Diseño a medida</h3><p>Te enviamos una propuesta visual en 48 horas, sin costo.</p></div>
+      <div class="service"><h3>Asesoría de tallas</h3><p>Tomamos medidas por videollamada para que todo el plantel quede bien.</p></div>
+    </div>
+
+    <form class="calc" id="calc" onsubmit="return false" aria-label="Cotizador de uniformes">
+      <div>
+        <h2>Cotiza tu pedido</h2>
+        <div class="field"><label for="prenda">Prenda</label>
+          <select id="prenda"><option value="camiseta">Camiseta ($18)</option><option value="short">Short ($15)</option><option value="conjunto">Conjunto camiseta + short ($30)</option><option value="chaqueta">Chaqueta ($45)</option></select></div>
+        <div class="field"><label for="pers">Personalización</label>
+          <select id="pers"><option value="ninguna">Sin personalizar</option><option value="numero">Nombre y número (+$3)</option><option value="sublimada">Sublimación completa (+$6)</option></select></div>
+        <div class="field"><label for="cant">Cantidad (mínimo 10)</label>
+          <input id="cant" type="number" min="10" value="20"></div>
+      </div>
+      <div class="result" aria-live="polite">
+        <p>Total estimado</p>
+        <div class="total" id="total">$0</div>
+        <p id="detalle"></p>
+        <div class="actions"><a class="btn" href="contacto.html">Pedir cotización formal</a></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>VELOZ Sport</strong> — ropa deportiva para moverte sin límites.</p>
+    <p><a href="contacto.html">hola@velozsport.com</a> · © 2026</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
